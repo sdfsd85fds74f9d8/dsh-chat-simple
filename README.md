@@ -126,7 +126,7 @@ NOTICE.md           两个上游的 MIT 版权声明
 
 本插件合并自两个 MIT 项目，两半的实现基本逐字沿用（各自的注释里记录了若干实测踩出来的坑，重写会静默地把它们放回去）：
 
-- **文字显示** ← [`dsh-font-probe`](https://github.com/<your-name>/dsh-font-probe)（MIT，© dsh-font-probe contributors）
+- **文字显示** ← `dsh-font-probe`（MIT，© dsh-font-probe contributors）
 - **会话头像** ← [`dsh-plugin-wallpaper-engine`](https://github.com/elysia395/dsh-wallpaper-engine)（MIT，© elysia395）—— 会话头像是它唯一保留下来的功能
 
 改动范围、以及两个上游的完整版权声明见 [`NOTICE.md`](./NOTICE.md)。感谢两位原作者。

@@ -21,12 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CHANGE-ME/dsh-chat-simple.git"
+    "url": "git+https://github.com/sdfsd85fds74f9d8/dsh-chat-simple.git"
   },
   "bugs": {
-    "url": "https://github.com/CHANGE-ME/dsh-chat-simple/issues"
+    "url": "https://github.com/sdfsd85fds74f9d8/dsh-chat-simple/issues"
   },
-  "homepage": "https://github.com/CHANGE-ME/dsh-chat-simple#readme",
+  "homepage": "https://github.com/sdfsd85fds74f9d8/dsh-chat-simple#readme",
   "publishConfig": {
     "access": "public"
   },
