@@ -1,0 +1,15 @@
+# dsh-chat-simple bundle patch.
+#
+# Applied over the dsh-web-app layer. This bundle contributes ONE host row that
+# (a) exports the `Config` schema DSH projects into the「聊天设置」text-display
+# form, and (b) serves the avatar settings + the two imported avatar images over
+# same-origin HTTP routes. The `dsh.client` manifest in package.json loads the
+# browser half that decorates the conversation and renders the settings page.
+#
+# `id` is the profile row id AND the Host settings namespace for the text
+# section. Renaming it orphans persisted config — keep it stable across
+# versions. (Values written by the previous `font-probe` row are read once as a
+# fallback by lib/client.js, then re-saved here.)
+- insert:
+    - id: chat-simple
+      name: dsh-chat-simple

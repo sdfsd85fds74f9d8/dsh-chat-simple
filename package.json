@@ -1,0 +1,88 @@
+{
+  "name": "dsh-chat-simple",
+  "version": "1.0.0",
+  "description": "聊天设置 for DeepSeek Harness — two sections in one page: session avatars (both sides get an avatar, messages line up left/right like a chat with a friend) and text display (CJK/Latin font families, sizes, letter/line/paragraph spacing, first-line indent). Pure DOM/CSS overrides; no official component is touched.",
+  "type": "module",
+  "engines": {
+    "node": ">=18",
+    "dsh": ">=0.1.5-rc.1"
+  },
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "avatar",
+    "font",
+    "typography",
+    "聊天设置"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHANGE-ME/dsh-chat-simple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CHANGE-ME/dsh-chat-simple/issues"
+  },
+  "homepage": "https://github.com/CHANGE-ME/dsh-chat-simple#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/http-body.js",
+    "lib/routes/avatar.js",
+    "lib/types/index.d.ts",
+    "lib/types/client.d.ts",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": ">=0.1.5-rc.1",
+    "@deepseek-ai/dsh-client-ui-slots": ">=0.1.5-rc.1",
+    "@deepseek-ai/dsh-host-webserver": ">=0.1.5-rc.1",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-client-runtime": { "optional": true },
+    "@deepseek-ai/dsh-client-ui-slots": { "optional": true },
+    "@deepseek-ai/dsh-client-ui-renderer": { "optional": true },
+    "@deepseek-ai/dsh-client-ui-settings": { "optional": true },
+    "@deepseek-ai/dsh-host-webserver": { "optional": true }
+  },
+  "dependencies": {}
+}

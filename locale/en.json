@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chat settings",
+    "description": "Two sections in one place: session avatars give both sides an avatar so messages line up left and right like a chat with a friend; text display changes the CJK/Latin font, sizes and letter/line/paragraph spacing. Both are pure DOM/CSS overrides — no official component is touched."
+  }
+}
